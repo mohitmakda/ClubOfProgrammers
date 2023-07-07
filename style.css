@@ -395,6 +395,9 @@ footer {
     height: 400px;
     margin: 0 auto;
     text-align: center;
+    padding: 10px;
+    border: 1px solid #666;
+    border-radius: 10px;
 }
 
 .events-info img{
