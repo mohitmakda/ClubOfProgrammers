@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <div class="navbar">
@@ -25,7 +27,8 @@
         <!-- <div class="cops-logo-container"> <div class="cops-logo-inside"> <div class="cops-logo-firstline">Club Of ProgrammerS</div> <div class="cops-logo-secondline"></div> </div> </div> -->
     </div>
 
-    <div class="about-hackweek">
+    <div class="about-hackweek" data-aos="fade-up" 
+    data-aos-duration="3000" data-aos-mirror="true">
         <div class="about-hackweek-heading">
             <span>HackWeek: Unleashing Innovation and Creativity</span>
         </div>
@@ -48,7 +51,8 @@
       
     </div>
 
-    <div class="what-is-hackweek">
+    <div class="what-is-hackweek" data-aos="fade-up" 
+    data-aos-duration="3000" data-aos-mirror="true">
         <div class="what-is-hackweek-heading">
             <span>What is HackWeek?</span>
         </div>
@@ -76,7 +80,8 @@
       
     </div>
 
-    <div class="about-hackweek">
+    <div class="about-hackweek" data-aos="fade-up" 
+    data-aos-duration="3000" data-aos-mirror="true">
         <div class="about-hackweek-heading">
             <span>Join Us for HackWeek!
 
@@ -153,6 +158,14 @@
         </div>
         
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset:300,
+        duration:1000
+      });
+    </script>
 
 </body>
 </html>
