@@ -229,20 +229,165 @@ nav .menu {
 .domains .domain-type p{
     line-height: 2;
 }
+/* contact us */
+.contactHeader{
+    background:url('banner.png');
+    background-size:cover;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+   
+}
 
+.contactHeader h2{
+    color: #fff;
+}
+
+.contactDetails{
+    display: flex;
+    padding: 100px;
+    
+}
+
+.contactContent{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+
+}
+.contactDetails .contactContent h3{
+    font-size: 17px;
+
+    color: #666;
+    font-weight: 700;
+    padding: 20px 0;
+}
+
+.contactDetails .contactContent h2{
+    font-size: 25px;
+
+    color: #000b0a;
+    line-height: 1;
+    padding: 20px 0;
+    font-weight: 700;
+}
+.contactDetails .contactContent h1{
+    font-size: 20px;
+    color: #088178;
+}
+.contactContent li{
+    /* text-decoration: none; */
+    list-style: none;
+    display: flex;
+    padding: 20px 0;
+}
+.contactContent li span{
+    color: #666;
+    padding: 0 6px;
+    font-size: 16px;
+} 
+
+.contactContent li i{
+    color: #666;
+
+    font-size: 16px;
+}
+.contactDetails .contactMap{
+    width: 55%;
+    height: 400px;
+    
+}
+
+.contactDetails .contactMap iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.formDetails{
+    height: 640px;
+    width: 100%;
+
+    
+    
+}
+
+.formDetails form{
+    height: 80vh;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: center; */
+    margin: 0 auto;
+    border: 1px solid #e1e1e1;
+    padding: 20px;
+    
+  
+}
+
+.formDetails form span{
+    color: #666;
+    /* padding: 0 6px; */
+    font-size: 16px;
+}
+
+.formDetails form h2{
+    font-size: 25px;
+
+    color: #000b0a;
+    line-height: 1;
+    padding: 20px 0;
+    font-weight: 700;
+}
+
+.formDetails form input,
+.formDetails form textarea
+{
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    outline: none;
+    border: 1px solid #e1e1e1;
+    border-radius: 6px;
+}
+.formDetails form button{
+font-size: 14px;
+    font-weight: 500;
+    background-color: #088178;
+    padding: 15px 30px;
+    color:#fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+
+}
+
+.formDetails form button:hover{
+    
+    background-color:#000b0a;
+    color: #E3E6F3;
+}
 /* footer */
 
 footer {
     display:flex;
     /* flex-direction:column; */
-    
-    /* flex-wrap:wrap; */
-    background-color: #fff;
+    width: 100vw;
+    flex-wrap:wrap;
+    background-color: #F2F2F2;
     color: #333;
     font-size: 16px;
     padding: 60px 0;
     justify-content:center;
     align-items: center;
+    margin-top: 100px;
   }
   
   footer h4 {
