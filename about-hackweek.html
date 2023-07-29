@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
-<body>
-
+<body >
+  <div id="loading">
+  </div>
   <div class="navbar">
     <nav>
     
@@ -189,7 +190,17 @@
       
       close.addEventListener('click',()=>{
           nav.style.right = '-250px';
-      })</script>
+      })
+    
+    
+      function hidePreloader() {
+        var preloader = document.getElementById('loading');
+        preloader.style.display = 'none';
+    }
+
+    // Call the hidePreloader function to hide the preloader
+    hidePreloader();
+  </script>
 
 </body>
 </html>

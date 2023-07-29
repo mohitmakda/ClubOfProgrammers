@@ -9,6 +9,16 @@
     font-family: Helvetica ,Arial ,sans-serif;
     /* overflow-x: hidden; */
 }
+
+#loading{
+    position:fixed;
+
+    width: 100%;
+    height: 100%;
+    background: #fff url('Cube-1s-200px.gif')no-repeat center;
+    z-index: 99999 ;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -41,7 +51,7 @@ h4{
     padding: 20px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.6);
     z-index: 999;
-    position: sticky;
+    /* position: sticky; */
     height: 100px;
     width: 100vw;
     color: aliceblue;

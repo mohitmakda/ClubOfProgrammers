@@ -479,3 +479,13 @@ nav .navbar-items #close{
     width: 5px;
 }
 }
+
+
+#mobile{
+    display: none;
+}
+
+#close{
+    display: none;
+}
+/* about us */

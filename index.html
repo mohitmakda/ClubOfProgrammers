@@ -13,8 +13,9 @@
 
 
 </head>
-<body>
-
+<body >
+    <div id="loading">
+    </div>
     
   
       
@@ -36,6 +37,8 @@
                 <i id="bar" class="fa fa-outdent"></i>
             </div>
         </nav>
+
+        
         <!-- <div class="cops-logo-container"> <div class="cops-logo-inside"> <div class="cops-logo-firstline">Club Of ProgrammerS</div> <div class="cops-logo-secondline"></div> </div> </div> -->
     </div>
     
@@ -239,7 +242,20 @@
         
         close.addEventListener('click',()=>{
             nav.style.right = '-250px';
-        })</script>
+        })
+    
+        function hidePreloader() {
+            var preloader = document.getElementById('loading');
+            preloader.style.display = 'none';
+        }
+
+        // Increase the preloader time (delay) in milliseconds
+        var preloaderDelay = 3000; // 3000 milliseconds = 3 seconds
+
+        // Wait for the specified delay and then hide the preloader
+        setTimeout(hidePreloader, preloaderDelay);
+    
+    </script>
 </body>
 </html>
 

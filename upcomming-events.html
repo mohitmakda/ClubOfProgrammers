@@ -10,7 +10,10 @@
 
     
 </head>
-<body>
+<body >
+  <div id="loading">
+  </div>
+
     <div class="navbar">
         <nav>
         
@@ -145,6 +148,15 @@
       
       close.addEventListener('click',()=>{
           nav.style.right = '-250px';
-      })</script>
+      })
+    
+      function hidePreloader() {
+        var preloader = document.getElementById('loading');
+        preloader.style.display = 'none';
+    }
+
+    // Call the hidePreloader function to hide the preloader
+    hidePreloader();
+  </script>
 </body>
 </html>
