@@ -119,7 +119,13 @@ nav .menu {
     position: absolute;
     margin-left: 50px;
 }
+#mobile{
+    display: none;
+}
 
+#close{
+    display: none;
+}
 /* about us */
 
 .about-us{
@@ -128,7 +134,7 @@ nav .menu {
     height: 100vh;
     align-items: center;
     justify-content: flex-start;
-    padding: 80px;
+    padding: 80px 0;
 }
 
 
@@ -140,7 +146,7 @@ nav .menu {
 }
 
 .about-us .about-us-logo{
-    padding: 20px;
+    padding: 20px 0;
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -455,8 +461,151 @@ footer {
     /* display: flex; */
     /* flex-wrap: wrap; */
   }
+
+  @media (max-width:477px){
+    .contactDetails{
+        flex-direction: column;
+        padding: 0;
+       
+        /* align-items: center; */
+    }
+    .contactDetails .contactContent{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .contactDetails .contactMap{
+        margin-bottom: 50px;
+        width: 100%;
+       
+        height: 400px;
+    }
+    .formDetails form{
+        height: 70vh;
+        width: 80%;
+        /* margin-top: 20px; */
+        padding: 10px;
+        
+      
+    }
+    /* .contactDetails map iframe{
+        width: 30%; 
+        /* height: 100%; */
+    } 
   
   @media (max-width: 477px) {
+ 
+
+    
+    .navbar-items{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: 0px;
+        height: 100%;
+        width: 250px;
+        background-color:#000000;
+        box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+        padding: 80px 0 0 10px;
+        transition: right 0.6s ease;
+        /* overflow: hidden; */
+        
+    }
+    #mobile{
+        display: initial;
+        align-items: center;
+    }
+    .navbar-items .active{
+        right: 0px;
+    }
+    #mobile i{
+        color: #fff;
+        font-size: 19px;
+        padding-left: 20px;
+    }
+
+
+    .navbar-items li{
+        margin-bottom: 25px;
+    }
+
+    #close{
+        display: initial;
+        position: absolute;
+        top:30px;
+        left: 10px;
+        color: #fff;
+        font-size: 18px;
+    }
+
+
+    .about-us{
+        padding: 40px 0;
+    }
+    
+    
+    .about-us .about-us-heading{
+        font-size: 30px;
+        font-weight: 2;
+        /* margin-bottom: 20px; */
+        
+        
+    }
+    
+    .about-us .about-us-logo{
+        padding: 20px 0;
+        width: 100%;
+        
+    }
+    
+    
+    .about-us .about-us-content {
+        width: 90%;
+        line-height: 2;
+    }
+    
+    .domain-container{
+       
+        padding: 20px 0;
+
+       
+    }
+    
+    .domains{
+        /* height: 100vh; */
+        padding: 40px;
+
+        width: 100vw;
+    }
+    
+
+    
+    .domain-container h3{
+        font-size: 20px;
+        color: #000000;
+        /* font-weight: bold; */
+        margin: 15px;
+    }
+    
+    .domains .domain-type{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* padding: 80px; */
+        margin: 20px;
+    
+    }
+    
+    .domains .domain-type .domain-content{
+        width: 100%;
+    }
+    
+ 
+    
+
     footer {
       text-align: center;
       /* flex-direction: column;
@@ -489,6 +638,7 @@ footer {
 
   }
   
+
 /* upcomming events css */
 
 .past-events{
@@ -577,7 +727,27 @@ footer {
 .event-footer{
     background-color: #F2F2F2;
 }
-
+@media (max-width: 477px){
+.upcomming-events p {
+    margin: 20px 0;
+    width: 90%;
+    color: #222222;
+    line-height: 2;
+}
+.event-information {
+    
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+.events-info {
+    width: 100%;
+    height: 450px;
+    margin: 20px 0;
+}
+}
 
 /* about hackweek */
 
@@ -616,7 +786,7 @@ footer {
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 20px;
-    width: 800px;
+    width: 100%;
     height: 400px;
 }
 
@@ -663,7 +833,7 @@ footer {
 
 .what-is-hackweek .what-is-hackweek-logo{
     padding: 20px;
-    width: 30%;
+    width: 60%;
     display: flex;
     /* flex-direction: column; */
     justify-content: center;
@@ -675,7 +845,7 @@ footer {
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 20px;
-    width: 800px;
+    width: 100%;
     height: 400px;
 }
 
@@ -733,3 +903,41 @@ font-size: 14px;
 .about-hackweek-content{
     margin-bottom: 20px;
 }
+
+@media screen and (max-width: 470px) {
+
+    .about-hackweek,
+    .what-is-hackweek {
+      padding: 40px 0; /* Adjust the padding for smaller screens */
+      /* height: 100vh; */
+    }
+    .what-is-hackweek{
+        height: 2000px;
+        margin: 100px 0;
+        /* overflow-x: hidden; */
+    }
+    .about-hackweek{
+        height: 1000px;
+        margin-bottom: 550px ;
+       /* overflow-x: hidden; */
+
+    }
+    .about-hackweek .about-hackweek-logo,
+    .what-is-hackweek .what-is-hackweek-logo {
+      width: 100%; /* Adjust the logo width for smaller screens */
+    }
+  
+    .about-hackweek .about-hackweek-heading,
+    .what-is-hackweek .what-is-hackweek-heading {
+      font-size: 20px; /* Adjust the heading font size for smaller screens */
+    }
+  
+  
+    .what-is-hackweek .what-is-hackweek-content {
+      width: 100%; /* Adjust the content width for smaller screens */
+    }
+    .about-hackweek .about-hackweek-content{
+        width: 90%;
+    }
+  }
+  

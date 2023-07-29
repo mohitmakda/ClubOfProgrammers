@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="hackweek.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-biS2A6QPyLVp2GUysOY9xQrM1LTXJ7/x1OK4u7sJ7a9CwKc2x7ZX5VBkFOQ39OQxuJstbrJyTz+j/tPToKrbA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
+    <div class="navbar">
     <nav>
         <h3>Club Of ProgrammerS</h3>
         <ul class="navbar-items">
@@ -15,24 +19,18 @@
             <li><a href="hackweek.html" class="active">HACKWEEK</a></li>
             <!-- <li><a href="ABOUT.html">ABOUT</a></li> -->
             <li><a href="about-hackweek.html">ABOUT-HACKWEEK</a></li>
-            <ul class="logout-mode">
-                <li><a href="#">
-                    <i class="uil uil-signout"></i>
-                    <span class="link-name">Logout</span>
-                </a></li>
-                <li class="mode">
-                    <a href="#">
-                        <i class="uil uil-moon"></i>
-                    <!-- <span class="link-name">Dark Mode</span> -->
-                </a>
-                <div class="mode-toggle">
-                  <!-- <span class="switch"></span> -->
-                </div>
-            </li>
-            </ul>
-            
+            <li><a href="about-hackweek.html">logout</a></li>
+
+           
+            <a href="#" id="close"><i class="fa fa-times"></i></a>
+
         </ul>
+        
+        <div id="mobile">
+            <i id="bar" class="fa fa-outdent"></i>
+        </div>
     </nav>
+    </div>
     <section class="dashboard">
         
         <div class="dash-content">
@@ -120,6 +118,19 @@
         </div>
     </section>
     <script src="script.js"></script>
+    <script >const bar = document.getElementById('bar')
+        const nav = document.querySelector('.navbar-items')
+        const close = document.getElementById('close')
+        
+        
+        bar.addEventListener('click',()=>{
+            nav.style.right = '0px';
+        })
+        
+        close.addEventListener('click',()=>{
+            nav.style.right = '-300px';
+        })
+    </script>
 </body>
 </html>
 

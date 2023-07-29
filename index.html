@@ -9,6 +9,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-biS2A6QPyLVp2GUysOY9xQrM1LTXJ7/x1OK4u7sJ7a9CwKc2x7ZX5VBkFOQ39OQxuJstbrJyTz+j/tPToKrbA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 </head>
 <body>
@@ -26,10 +28,13 @@
                 <li><a href="hackweek.html">HACKWEEK</a></li>
                 <!-- <li><a href="ABOUT.html">ABOUT</a></li> -->
                 <li><a href="about-hackweek.html">ABOUT-HACKWEEK</a></li>
-                
+                <a href="#" id="close"><i class="fa fa-times"></i>
+                </a>
             </ul>
             
-            
+            <div id="mobile">
+                <i id="bar" class="fa fa-outdent"></i>
+            </div>
         </nav>
         <!-- <div class="cops-logo-container"> <div class="cops-logo-inside"> <div class="cops-logo-firstline">Club Of ProgrammerS</div> <div class="cops-logo-secondline"></div> </div> </div> -->
     </div>
@@ -210,11 +215,31 @@
     <!-- the below script is used for animation while scrolling -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init({
+      AOS.init{
         offset:300,
         duration:1000
       });
+      AOS.init({
+        disable: function() {
+          var maxWidth = 800;
+          return window.innerWidth < maxWidth;
+        }
+      });
+
     </script>
+
+    <script >const bar = document.getElementById('bar')
+        const nav = document.querySelector('.navbar-items')
+        const close = document.getElementById('close')
+        
+        
+        bar.addEventListener('click',()=>{
+            nav.style.right = '0px';
+        })
+        
+        close.addEventListener('click',()=>{
+            nav.style.right = '-250px';
+        })</script>
 </body>
 </html>
 
