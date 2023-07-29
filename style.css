@@ -503,7 +503,7 @@ footer {
         align-items: flex-start;
         position: fixed;
         top: 0;
-        right: 0px;
+        right: -250px;
         height: 100%;
         width: 250px;
         background-color:#000000;
