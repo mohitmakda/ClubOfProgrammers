@@ -428,7 +428,13 @@ nav .menu {
     position: absolute;
     margin-left: 50px;
 }
+#mobile{
+    display: none;
+}
 
+#close{
+    display: none;
+}
 
 @media (max-width: 560px) {
 
@@ -451,8 +457,9 @@ nav .navbar-items{
     
 }
 #mobile{
-    display: initial;
+    display:initial;
     align-items: center;
+    /* color: #DDD */
 }
 .navbar-items .active{
     right: 0px;
@@ -481,11 +488,5 @@ nav .navbar-items #close{
 }
 
 
-#mobile{
-    display: none;
-}
 
-#close{
-    display: none;
-}
 /* about us */
